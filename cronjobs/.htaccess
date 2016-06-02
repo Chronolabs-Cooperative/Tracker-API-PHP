@@ -1,0 +1,4 @@
+<Files ~ "^.poo$">
+	deny from all
+</Files>
+
