@@ -7,13 +7,13 @@ php_value display_errors 1
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^announce?(.*?)$																			announce.php?$1						[L,NC,QSA]				
-RewriteRule ^scrape?(.*?)$																				scrape.php?$1						[L,NC,QSA]	
-RewriteRule ^announce$																					announce.php						[L,NC,QSA]				
-RewriteRule ^scrape$																					scrape.php							[L,NC,QSA]	
-RewriteRule ^([a-z0-9]{2})/(.*?)/callback.api$															callback.php?version=$1&mode=$2		[L,NC,QSA]
-RewriteRule ^([a-z0-9]{2})/(peers|seeds|files|trackers|network)/(.*?)/(benc|json|serial|xml).api?(.*?)$ 		index.php?version=$1&mode=$2&clause=$3&state=&output=$4&$5		[L]	
-RewriteRule ^([a-z0-9]{2})/(peers|seeds|files|trackers|network)/(.*?)/(benc|json|serial|xml).api$			index.php?version=$1&mode=$2&clause=$3&state=&output=$4			[L]	
-RewriteRule ^([a-z0-9]{2})/(torrents)/(benc|json|serial|xml).api?(.*?)$ 										index.php?version=$1&mode=$2&clause=&state=&output=$3&$4		[L]
-RewriteRule ^([a-z0-9]{2})/(torrents)/(benc|json|serial|xml).api$											index.php?version=$1&mode=$2&clause=&state=&output=$3&			[L]
-
+RewriteRule ^announce?(.*?)$ announce.php?$1 [L,NC,QSA]				
+RewriteRule ^scrape?(.*?)$ scrape.php?$1 [L,NC,QSA]	
+RewriteRule ^announce$ announce.php [L,NC,QSA]				
+RewriteRule ^scrape$ scrape.php [L,NC,QSA]	
+RewriteRule ^([a-z0-9]{2})/(.*?)/callback.api$ callback.php?version=$1&mode=$2 [L,NC,QSA]
+RewriteRule ^([a-z0-9]{2})/(peers|seeds|files|trackers|network)/(.*?)/(raw|benc|json|serial|xml).api?(.*?)$ index.php?version=$1&mode=$2&clause=$3&state=&output=$4&$5 [L]	
+RewriteRule ^([a-z0-9]{2})/(peers|seeds|files|trackers|network)/(.*?)/(raw|benc|json|serial|xml).api$ index.php?version=$1&mode=$2&clause=$3&state=&output=$4 [L]	
+RewriteRule ^([a-z0-9]{2})/(torrents)/(raw|benc|json|serial|xml).api?(.*?)$ index.php?version=$1&mode=$2&clause=&state=&output=$3&$4 [L]
+RewriteRule ^([a-z0-9]{2})/(torrents)/(raw|benc|json|serial|xml).api$ index.php?version=$1&mode=$2&clause=&state=&output=$3& [L]
+RewriteRule ^([a-z0-9]{2})/(download)/(.*?).(torrent)$ download.php?version=$1&mode=$2&clause=&state=&output=$3& [L]
