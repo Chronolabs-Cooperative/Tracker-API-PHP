@@ -1,0 +1,115 @@
+/** Labtop Italic */
+@font-face {
+	font-family:		'Labtop Italic';
+	src:				url('./Labtop Italic.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Labtop Italic.pmf') format('pmf'),		/* Filesize: 2920 bytes, md5: 87b9b721b5bf0b182c9c1fad5df2a0f5 */
+						url('./Labtop Italic.pcf') format('pcf'),		/* Filesize: 2920 bytes, md5: 97aa63799d8f379eb3eb0043e5ffb622 */
+						url('./Labtop Italic.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Labtop Italic.pfa') format('pfa'),		/* Filesize: 3917 bytes, md5: 5b773eff9db28884ba753eeaf54ee172 */
+						url('./Labtop Italic.eot') format('eot'),		/* Filesize: 2920 bytes, md5: 219396c5dcc08515b7945ed7eafcbae7 */
+						url('./Labtop Italic.ttf') format('ttf'),		/* Filesize: 2280 bytes, md5: 71a09a898c8d89b32c55ed2593ca5b7b */
+						url('./Labtop Italic.otf') format('otf'),		/* Filesize: 2532 bytes, md5: 07fc09732d5f1c9056d5339ae7263507 */
+						url('./Labtop Italic.woff') format('woff'),		/* Filesize: 1460 bytes, md5: ba5b6f789705b5668e6981464af914ff */
+						url('./Labtop Italic.cff') format('cff'),		/* Filesize: 785 bytes, md5: 2770aa5a3c95bcdc15f3fee1b36382d7 */
+						url('./Labtop Italic.cef') format('cef'),		/* Filesize: 2920 bytes, md5: 5cdbb642e22cbfdec574489f4a7e434d */
+						url('./Labtop Italic.dfont') format('dfont'),		/* Filesize: 3295 bytes, md5: e5995ab4df590296f490e9e4fd92ae85 */
+						url('./Labtop Italic.mf') format('mf'),		/* Filesize: 2920 bytes, md5: 0aff4d37c1fd1b5a73b5ac7650dc1550 */
+						url('./Labtop Italic.hqx') format('hqx'),		/* Filesize: 2920 bytes, md5: a509f563c7309222a73f8675adf8f3a3 */
+						url('./Labtop Italic.pt3') format('pt3'),		/* Filesize: 2370 bytes, md5: cf4987c1fe48e86f12102615a218b48e */
+						url('./Labtop Italic.gsf') format('gsf'),		/* Filesize: 2920 bytes, md5: 6755cca79fb4469df581d9766b5da53b */
+						url('./Labtop Italic.svg') format('svg'),		/* Filesize: 1133 bytes, md5: 88f8a891fa2b39790fed35e984b2256f */
+						url('./Labtop Italic.pfb') format('pfb'),		/* Filesize: 2920 bytes, md5: 2fcb4e820385c3997ec6d313dd6c21a7 */
+						url('./Labtop Italic.ik') format('ik'),		/* Filesize: 2920 bytes, md5: 473ebc8927864cada71231e9e78fcc41 */
+						url('./Labtop Italic.sfd') format('sfd'),		/* Filesize: 2920 bytes, md5: c08c5ebb99bf1abe230f1686a8f6fcfd */
+						url('./Labtop Italic.bin') format('bin'),		/* Filesize: 3456 bytes, md5: 9b758db8e380bd193bae1b4f18d8f0e9 */
+						url('./Labtop Italic.gai') format('gai'),		/* Filesize: 2920 bytes, md5: 2d84f17e5f0996121c037693f600784b */
+						url('./Labtop Italic.t42') format('t42'),		/* Filesize: 2517 bytes, md5: c3687e7f4fc6d216f00ce72838a59f11 */
+						url('./Labtop Italic.pf3') format('pf3');		/* Filesize: 2920 bytes, md5: 742be3397bb3e3a52ee605e783e46eb7 */
+}
+
+/** Labtop Italic */
+@font-face {
+	font-family:		'labtop-italic';
+	src:				url('./Labtop Italic.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Labtop Italic.pmf') format('pmf'),		/* Filesize: 2920 bytes, md5: 87b9b721b5bf0b182c9c1fad5df2a0f5 */
+						url('./Labtop Italic.pcf') format('pcf'),		/* Filesize: 2920 bytes, md5: 97aa63799d8f379eb3eb0043e5ffb622 */
+						url('./Labtop Italic.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Labtop Italic.pfa') format('pfa'),		/* Filesize: 3917 bytes, md5: 5b773eff9db28884ba753eeaf54ee172 */
+						url('./Labtop Italic.eot') format('eot'),		/* Filesize: 2920 bytes, md5: 219396c5dcc08515b7945ed7eafcbae7 */
+						url('./Labtop Italic.ttf') format('ttf'),		/* Filesize: 2280 bytes, md5: 71a09a898c8d89b32c55ed2593ca5b7b */
+						url('./Labtop Italic.otf') format('otf'),		/* Filesize: 2532 bytes, md5: 07fc09732d5f1c9056d5339ae7263507 */
+						url('./Labtop Italic.woff') format('woff'),		/* Filesize: 1460 bytes, md5: ba5b6f789705b5668e6981464af914ff */
+						url('./Labtop Italic.cff') format('cff'),		/* Filesize: 785 bytes, md5: 2770aa5a3c95bcdc15f3fee1b36382d7 */
+						url('./Labtop Italic.cef') format('cef'),		/* Filesize: 2920 bytes, md5: 5cdbb642e22cbfdec574489f4a7e434d */
+						url('./Labtop Italic.dfont') format('dfont'),		/* Filesize: 3295 bytes, md5: e5995ab4df590296f490e9e4fd92ae85 */
+						url('./Labtop Italic.mf') format('mf'),		/* Filesize: 2920 bytes, md5: 0aff4d37c1fd1b5a73b5ac7650dc1550 */
+						url('./Labtop Italic.hqx') format('hqx'),		/* Filesize: 2920 bytes, md5: a509f563c7309222a73f8675adf8f3a3 */
+						url('./Labtop Italic.pt3') format('pt3'),		/* Filesize: 2370 bytes, md5: cf4987c1fe48e86f12102615a218b48e */
+						url('./Labtop Italic.gsf') format('gsf'),		/* Filesize: 2920 bytes, md5: 6755cca79fb4469df581d9766b5da53b */
+						url('./Labtop Italic.svg') format('svg'),		/* Filesize: 1133 bytes, md5: 88f8a891fa2b39790fed35e984b2256f */
+						url('./Labtop Italic.pfb') format('pfb'),		/* Filesize: 2920 bytes, md5: 2fcb4e820385c3997ec6d313dd6c21a7 */
+						url('./Labtop Italic.ik') format('ik'),		/* Filesize: 2920 bytes, md5: 473ebc8927864cada71231e9e78fcc41 */
+						url('./Labtop Italic.sfd') format('sfd'),		/* Filesize: 2920 bytes, md5: c08c5ebb99bf1abe230f1686a8f6fcfd */
+						url('./Labtop Italic.bin') format('bin'),		/* Filesize: 3456 bytes, md5: 9b758db8e380bd193bae1b4f18d8f0e9 */
+						url('./Labtop Italic.gai') format('gai'),		/* Filesize: 2920 bytes, md5: 2d84f17e5f0996121c037693f600784b */
+						url('./Labtop Italic.t42') format('t42'),		/* Filesize: 2517 bytes, md5: c3687e7f4fc6d216f00ce72838a59f11 */
+						url('./Labtop Italic.pf3') format('pf3');		/* Filesize: 2920 bytes, md5: 742be3397bb3e3a52ee605e783e46eb7 */
+}
+
+/** Labtop Italic */
+@font-face {
+	font-family:		'ugsiqgoye8ecucaa';
+	src:				url('./Labtop Italic.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Labtop Italic.pmf') format('pmf'),		/* Filesize: 2920 bytes, md5: 87b9b721b5bf0b182c9c1fad5df2a0f5 */
+						url('./Labtop Italic.pcf') format('pcf'),		/* Filesize: 2920 bytes, md5: 97aa63799d8f379eb3eb0043e5ffb622 */
+						url('./Labtop Italic.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Labtop Italic.pfa') format('pfa'),		/* Filesize: 3917 bytes, md5: 5b773eff9db28884ba753eeaf54ee172 */
+						url('./Labtop Italic.eot') format('eot'),		/* Filesize: 2920 bytes, md5: 219396c5dcc08515b7945ed7eafcbae7 */
+						url('./Labtop Italic.ttf') format('ttf'),		/* Filesize: 2280 bytes, md5: 71a09a898c8d89b32c55ed2593ca5b7b */
+						url('./Labtop Italic.otf') format('otf'),		/* Filesize: 2532 bytes, md5: 07fc09732d5f1c9056d5339ae7263507 */
+						url('./Labtop Italic.woff') format('woff'),		/* Filesize: 1460 bytes, md5: ba5b6f789705b5668e6981464af914ff */
+						url('./Labtop Italic.cff') format('cff'),		/* Filesize: 785 bytes, md5: 2770aa5a3c95bcdc15f3fee1b36382d7 */
+						url('./Labtop Italic.cef') format('cef'),		/* Filesize: 2920 bytes, md5: 5cdbb642e22cbfdec574489f4a7e434d */
+						url('./Labtop Italic.dfont') format('dfont'),		/* Filesize: 3295 bytes, md5: e5995ab4df590296f490e9e4fd92ae85 */
+						url('./Labtop Italic.mf') format('mf'),		/* Filesize: 2920 bytes, md5: 0aff4d37c1fd1b5a73b5ac7650dc1550 */
+						url('./Labtop Italic.hqx') format('hqx'),		/* Filesize: 2920 bytes, md5: a509f563c7309222a73f8675adf8f3a3 */
+						url('./Labtop Italic.pt3') format('pt3'),		/* Filesize: 2370 bytes, md5: cf4987c1fe48e86f12102615a218b48e */
+						url('./Labtop Italic.gsf') format('gsf'),		/* Filesize: 2920 bytes, md5: 6755cca79fb4469df581d9766b5da53b */
+						url('./Labtop Italic.svg') format('svg'),		/* Filesize: 1133 bytes, md5: 88f8a891fa2b39790fed35e984b2256f */
+						url('./Labtop Italic.pfb') format('pfb'),		/* Filesize: 2920 bytes, md5: 2fcb4e820385c3997ec6d313dd6c21a7 */
+						url('./Labtop Italic.ik') format('ik'),		/* Filesize: 2920 bytes, md5: 473ebc8927864cada71231e9e78fcc41 */
+						url('./Labtop Italic.sfd') format('sfd'),		/* Filesize: 2920 bytes, md5: c08c5ebb99bf1abe230f1686a8f6fcfd */
+						url('./Labtop Italic.bin') format('bin'),		/* Filesize: 3456 bytes, md5: 9b758db8e380bd193bae1b4f18d8f0e9 */
+						url('./Labtop Italic.gai') format('gai'),		/* Filesize: 2920 bytes, md5: 2d84f17e5f0996121c037693f600784b */
+						url('./Labtop Italic.t42') format('t42'),		/* Filesize: 2517 bytes, md5: c3687e7f4fc6d216f00ce72838a59f11 */
+						url('./Labtop Italic.pf3') format('pf3');		/* Filesize: 2920 bytes, md5: 742be3397bb3e3a52ee605e783e46eb7 */
+}
+
+/** Labtop Italic */
+@font-face {
+	font-family:		'okauoe';
+	src:				url('./Labtop Italic.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Labtop Italic.pmf') format('pmf'),		/* Filesize: 2920 bytes, md5: 87b9b721b5bf0b182c9c1fad5df2a0f5 */
+						url('./Labtop Italic.pcf') format('pcf'),		/* Filesize: 2920 bytes, md5: 97aa63799d8f379eb3eb0043e5ffb622 */
+						url('./Labtop Italic.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Labtop Italic.pfa') format('pfa'),		/* Filesize: 3917 bytes, md5: 5b773eff9db28884ba753eeaf54ee172 */
+						url('./Labtop Italic.eot') format('eot'),		/* Filesize: 2920 bytes, md5: 219396c5dcc08515b7945ed7eafcbae7 */
+						url('./Labtop Italic.ttf') format('ttf'),		/* Filesize: 2280 bytes, md5: 71a09a898c8d89b32c55ed2593ca5b7b */
+						url('./Labtop Italic.otf') format('otf'),		/* Filesize: 2532 bytes, md5: 07fc09732d5f1c9056d5339ae7263507 */
+						url('./Labtop Italic.woff') format('woff'),		/* Filesize: 1460 bytes, md5: ba5b6f789705b5668e6981464af914ff */
+						url('./Labtop Italic.cff') format('cff'),		/* Filesize: 785 bytes, md5: 2770aa5a3c95bcdc15f3fee1b36382d7 */
+						url('./Labtop Italic.cef') format('cef'),		/* Filesize: 2920 bytes, md5: 5cdbb642e22cbfdec574489f4a7e434d */
+						url('./Labtop Italic.dfont') format('dfont'),		/* Filesize: 3295 bytes, md5: e5995ab4df590296f490e9e4fd92ae85 */
+						url('./Labtop Italic.mf') format('mf'),		/* Filesize: 2920 bytes, md5: 0aff4d37c1fd1b5a73b5ac7650dc1550 */
+						url('./Labtop Italic.hqx') format('hqx'),		/* Filesize: 2920 bytes, md5: a509f563c7309222a73f8675adf8f3a3 */
+						url('./Labtop Italic.pt3') format('pt3'),		/* Filesize: 2370 bytes, md5: cf4987c1fe48e86f12102615a218b48e */
+						url('./Labtop Italic.gsf') format('gsf'),		/* Filesize: 2920 bytes, md5: 6755cca79fb4469df581d9766b5da53b */
+						url('./Labtop Italic.svg') format('svg'),		/* Filesize: 1133 bytes, md5: 88f8a891fa2b39790fed35e984b2256f */
+						url('./Labtop Italic.pfb') format('pfb'),		/* Filesize: 2920 bytes, md5: 2fcb4e820385c3997ec6d313dd6c21a7 */
+						url('./Labtop Italic.ik') format('ik'),		/* Filesize: 2920 bytes, md5: 473ebc8927864cada71231e9e78fcc41 */
+						url('./Labtop Italic.sfd') format('sfd'),		/* Filesize: 2920 bytes, md5: c08c5ebb99bf1abe230f1686a8f6fcfd */
+						url('./Labtop Italic.bin') format('bin'),		/* Filesize: 3456 bytes, md5: 9b758db8e380bd193bae1b4f18d8f0e9 */
+						url('./Labtop Italic.gai') format('gai'),		/* Filesize: 2920 bytes, md5: 2d84f17e5f0996121c037693f600784b */
+						url('./Labtop Italic.t42') format('t42'),		/* Filesize: 2517 bytes, md5: c3687e7f4fc6d216f00ce72838a59f11 */
+						url('./Labtop Italic.pf3') format('pf3');		/* Filesize: 2920 bytes, md5: 742be3397bb3e3a52ee605e783e46eb7 */
+}

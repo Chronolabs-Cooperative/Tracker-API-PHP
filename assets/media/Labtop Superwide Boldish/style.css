@@ -1,0 +1,115 @@
+/** Labtop Superwide Boldish */
+@font-face {
+	font-family:		'Labtop Superwide Boldish';
+	src:				url('./Labtop Superwide Boldish.pfa') format('pfa'),		/* Filesize: 86026 bytes, md5: 37a6d43e96bb9f12847f3bc3ffbe9611 */
+						url('./Labtop Superwide Boldish.t42') format('t42'),		/* Filesize: 69623 bytes, md5: 5dae69dcacf396cd66db888999481661 */
+						url('./Labtop Superwide Boldish.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Labtop Superwide Boldish.pmf') format('pmf'),		/* Filesize: 45261 bytes, md5: c1023f5a377186d06718a015286d8654 */
+						url('./Labtop Superwide Boldish.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Labtop Superwide Boldish.cff') format('cff'),		/* Filesize: 27355 bytes, md5: fc8358d7f72d743f625af3e9f640c412 */
+						url('./Labtop Superwide Boldish.bin') format('bin'),		/* Filesize: 46208 bytes, md5: 45c7855d6b00386a9bfbcee8db200c26 */
+						url('./Labtop Superwide Boldish.pcf') format('pcf'),		/* Filesize: 45261 bytes, md5: 27ddafd911d27671dccdd858e647cfb0 */
+						url('./Labtop Superwide Boldish.dfont') format('dfont'),		/* Filesize: 31952 bytes, md5: d4b4a9d431e5c51bafb713da353979bc */
+						url('./Labtop Superwide Boldish.hqx') format('hqx'),		/* Filesize: 45261 bytes, md5: 28b5ceb73015afec3ead2b54286e4e86 */
+						url('./Labtop Superwide Boldish.ttf') format('ttf'),		/* Filesize: 30912 bytes, md5: 830338c54a38b08bde95815182993714 */
+						url('./Labtop Superwide Boldish.pt3') format('pt3'),		/* Filesize: 210305 bytes, md5: 810f5bac4ea1b7cd808d818f48d0ecfe */
+						url('./Labtop Superwide Boldish.gai') format('gai'),		/* Filesize: 45261 bytes, md5: f20875f86dd46a0afc841cc13f4d8d4b */
+						url('./Labtop Superwide Boldish.pfb') format('pfb'),		/* Filesize: 45261 bytes, md5: f52e9493e58977706caa6941896421df */
+						url('./Labtop Superwide Boldish.sfd') format('sfd'),		/* Filesize: 45261 bytes, md5: f6162c04ccca9699737b300fc9a397da */
+						url('./Labtop Superwide Boldish.cef') format('cef'),		/* Filesize: 45261 bytes, md5: b68dda4ac107b435cef6309a48a9602f */
+						url('./Labtop Superwide Boldish.woff') format('woff'),		/* Filesize: 16376 bytes, md5: 6d8977e73537e9e12b45238fd3aab498 */
+						url('./Labtop Superwide Boldish.gsf') format('gsf'),		/* Filesize: 45261 bytes, md5: 468de97c0de3f5902cfbdbb6c6127c6e */
+						url('./Labtop Superwide Boldish.svg') format('svg'),		/* Filesize: 74130 bytes, md5: 7d629893368c4cf4517a78c861c3147c */
+						url('./Labtop Superwide Boldish.eot') format('eot'),		/* Filesize: 45261 bytes, md5: 972a82d6d54aa4fe70bdd4b8d4c6829f */
+						url('./Labtop Superwide Boldish.pf3') format('pf3'),		/* Filesize: 45261 bytes, md5: 87e6931d61c9c03406c237259431d1c0 */
+						url('./Labtop Superwide Boldish.otf') format('otf'),		/* Filesize: 67272 bytes, md5: 30ce87920df218b7fec2d2be20e637db */
+						url('./Labtop Superwide Boldish.mf') format('mf'),		/* Filesize: 45261 bytes, md5: 38a7188d9955aec355c42cedb08425f7 */
+						url('./Labtop Superwide Boldish.ik') format('ik');		/* Filesize: 45261 bytes, md5: ab2e15cf73b1ca6671b00cc9d4ed63bb */
+}
+
+/** Labtop Superwide Boldish */
+@font-face {
+	font-family:		'labtop-superwide-boldish';
+	src:				url('./Labtop Superwide Boldish.pfa') format('pfa'),		/* Filesize: 86026 bytes, md5: 37a6d43e96bb9f12847f3bc3ffbe9611 */
+						url('./Labtop Superwide Boldish.t42') format('t42'),		/* Filesize: 69623 bytes, md5: 5dae69dcacf396cd66db888999481661 */
+						url('./Labtop Superwide Boldish.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Labtop Superwide Boldish.pmf') format('pmf'),		/* Filesize: 45261 bytes, md5: c1023f5a377186d06718a015286d8654 */
+						url('./Labtop Superwide Boldish.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Labtop Superwide Boldish.cff') format('cff'),		/* Filesize: 27355 bytes, md5: fc8358d7f72d743f625af3e9f640c412 */
+						url('./Labtop Superwide Boldish.bin') format('bin'),		/* Filesize: 46208 bytes, md5: 45c7855d6b00386a9bfbcee8db200c26 */
+						url('./Labtop Superwide Boldish.pcf') format('pcf'),		/* Filesize: 45261 bytes, md5: 27ddafd911d27671dccdd858e647cfb0 */
+						url('./Labtop Superwide Boldish.dfont') format('dfont'),		/* Filesize: 31952 bytes, md5: d4b4a9d431e5c51bafb713da353979bc */
+						url('./Labtop Superwide Boldish.hqx') format('hqx'),		/* Filesize: 45261 bytes, md5: 28b5ceb73015afec3ead2b54286e4e86 */
+						url('./Labtop Superwide Boldish.ttf') format('ttf'),		/* Filesize: 30912 bytes, md5: 830338c54a38b08bde95815182993714 */
+						url('./Labtop Superwide Boldish.pt3') format('pt3'),		/* Filesize: 210305 bytes, md5: 810f5bac4ea1b7cd808d818f48d0ecfe */
+						url('./Labtop Superwide Boldish.gai') format('gai'),		/* Filesize: 45261 bytes, md5: f20875f86dd46a0afc841cc13f4d8d4b */
+						url('./Labtop Superwide Boldish.pfb') format('pfb'),		/* Filesize: 45261 bytes, md5: f52e9493e58977706caa6941896421df */
+						url('./Labtop Superwide Boldish.sfd') format('sfd'),		/* Filesize: 45261 bytes, md5: f6162c04ccca9699737b300fc9a397da */
+						url('./Labtop Superwide Boldish.cef') format('cef'),		/* Filesize: 45261 bytes, md5: b68dda4ac107b435cef6309a48a9602f */
+						url('./Labtop Superwide Boldish.woff') format('woff'),		/* Filesize: 16376 bytes, md5: 6d8977e73537e9e12b45238fd3aab498 */
+						url('./Labtop Superwide Boldish.gsf') format('gsf'),		/* Filesize: 45261 bytes, md5: 468de97c0de3f5902cfbdbb6c6127c6e */
+						url('./Labtop Superwide Boldish.svg') format('svg'),		/* Filesize: 74130 bytes, md5: 7d629893368c4cf4517a78c861c3147c */
+						url('./Labtop Superwide Boldish.eot') format('eot'),		/* Filesize: 45261 bytes, md5: 972a82d6d54aa4fe70bdd4b8d4c6829f */
+						url('./Labtop Superwide Boldish.pf3') format('pf3'),		/* Filesize: 45261 bytes, md5: 87e6931d61c9c03406c237259431d1c0 */
+						url('./Labtop Superwide Boldish.otf') format('otf'),		/* Filesize: 67272 bytes, md5: 30ce87920df218b7fec2d2be20e637db */
+						url('./Labtop Superwide Boldish.mf') format('mf'),		/* Filesize: 45261 bytes, md5: 38a7188d9955aec355c42cedb08425f7 */
+						url('./Labtop Superwide Boldish.ik') format('ik');		/* Filesize: 45261 bytes, md5: ab2e15cf73b1ca6671b00cc9d4ed63bb */
+}
+
+/** Labtop Superwide Boldish */
+@font-face {
+	font-family:		'qcwcw4o2am';
+	src:				url('./Labtop Superwide Boldish.pfa') format('pfa'),		/* Filesize: 86026 bytes, md5: 37a6d43e96bb9f12847f3bc3ffbe9611 */
+						url('./Labtop Superwide Boldish.t42') format('t42'),		/* Filesize: 69623 bytes, md5: 5dae69dcacf396cd66db888999481661 */
+						url('./Labtop Superwide Boldish.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Labtop Superwide Boldish.pmf') format('pmf'),		/* Filesize: 45261 bytes, md5: c1023f5a377186d06718a015286d8654 */
+						url('./Labtop Superwide Boldish.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Labtop Superwide Boldish.cff') format('cff'),		/* Filesize: 27355 bytes, md5: fc8358d7f72d743f625af3e9f640c412 */
+						url('./Labtop Superwide Boldish.bin') format('bin'),		/* Filesize: 46208 bytes, md5: 45c7855d6b00386a9bfbcee8db200c26 */
+						url('./Labtop Superwide Boldish.pcf') format('pcf'),		/* Filesize: 45261 bytes, md5: 27ddafd911d27671dccdd858e647cfb0 */
+						url('./Labtop Superwide Boldish.dfont') format('dfont'),		/* Filesize: 31952 bytes, md5: d4b4a9d431e5c51bafb713da353979bc */
+						url('./Labtop Superwide Boldish.hqx') format('hqx'),		/* Filesize: 45261 bytes, md5: 28b5ceb73015afec3ead2b54286e4e86 */
+						url('./Labtop Superwide Boldish.ttf') format('ttf'),		/* Filesize: 30912 bytes, md5: 830338c54a38b08bde95815182993714 */
+						url('./Labtop Superwide Boldish.pt3') format('pt3'),		/* Filesize: 210305 bytes, md5: 810f5bac4ea1b7cd808d818f48d0ecfe */
+						url('./Labtop Superwide Boldish.gai') format('gai'),		/* Filesize: 45261 bytes, md5: f20875f86dd46a0afc841cc13f4d8d4b */
+						url('./Labtop Superwide Boldish.pfb') format('pfb'),		/* Filesize: 45261 bytes, md5: f52e9493e58977706caa6941896421df */
+						url('./Labtop Superwide Boldish.sfd') format('sfd'),		/* Filesize: 45261 bytes, md5: f6162c04ccca9699737b300fc9a397da */
+						url('./Labtop Superwide Boldish.cef') format('cef'),		/* Filesize: 45261 bytes, md5: b68dda4ac107b435cef6309a48a9602f */
+						url('./Labtop Superwide Boldish.woff') format('woff'),		/* Filesize: 16376 bytes, md5: 6d8977e73537e9e12b45238fd3aab498 */
+						url('./Labtop Superwide Boldish.gsf') format('gsf'),		/* Filesize: 45261 bytes, md5: 468de97c0de3f5902cfbdbb6c6127c6e */
+						url('./Labtop Superwide Boldish.svg') format('svg'),		/* Filesize: 74130 bytes, md5: 7d629893368c4cf4517a78c861c3147c */
+						url('./Labtop Superwide Boldish.eot') format('eot'),		/* Filesize: 45261 bytes, md5: 972a82d6d54aa4fe70bdd4b8d4c6829f */
+						url('./Labtop Superwide Boldish.pf3') format('pf3'),		/* Filesize: 45261 bytes, md5: 87e6931d61c9c03406c237259431d1c0 */
+						url('./Labtop Superwide Boldish.otf') format('otf'),		/* Filesize: 67272 bytes, md5: 30ce87920df218b7fec2d2be20e637db */
+						url('./Labtop Superwide Boldish.mf') format('mf'),		/* Filesize: 45261 bytes, md5: 38a7188d9955aec355c42cedb08425f7 */
+						url('./Labtop Superwide Boldish.ik') format('ik');		/* Filesize: 45261 bytes, md5: ab2e15cf73b1ca6671b00cc9d4ed63bb */
+}
+
+/** Labtop Superwide Boldish */
+@font-face {
+	font-family:		'eayyq';
+	src:				url('./Labtop Superwide Boldish.pfa') format('pfa'),		/* Filesize: 86026 bytes, md5: 37a6d43e96bb9f12847f3bc3ffbe9611 */
+						url('./Labtop Superwide Boldish.t42') format('t42'),		/* Filesize: 69623 bytes, md5: 5dae69dcacf396cd66db888999481661 */
+						url('./Labtop Superwide Boldish.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Labtop Superwide Boldish.pmf') format('pmf'),		/* Filesize: 45261 bytes, md5: c1023f5a377186d06718a015286d8654 */
+						url('./Labtop Superwide Boldish.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Labtop Superwide Boldish.cff') format('cff'),		/* Filesize: 27355 bytes, md5: fc8358d7f72d743f625af3e9f640c412 */
+						url('./Labtop Superwide Boldish.bin') format('bin'),		/* Filesize: 46208 bytes, md5: 45c7855d6b00386a9bfbcee8db200c26 */
+						url('./Labtop Superwide Boldish.pcf') format('pcf'),		/* Filesize: 45261 bytes, md5: 27ddafd911d27671dccdd858e647cfb0 */
+						url('./Labtop Superwide Boldish.dfont') format('dfont'),		/* Filesize: 31952 bytes, md5: d4b4a9d431e5c51bafb713da353979bc */
+						url('./Labtop Superwide Boldish.hqx') format('hqx'),		/* Filesize: 45261 bytes, md5: 28b5ceb73015afec3ead2b54286e4e86 */
+						url('./Labtop Superwide Boldish.ttf') format('ttf'),		/* Filesize: 30912 bytes, md5: 830338c54a38b08bde95815182993714 */
+						url('./Labtop Superwide Boldish.pt3') format('pt3'),		/* Filesize: 210305 bytes, md5: 810f5bac4ea1b7cd808d818f48d0ecfe */
+						url('./Labtop Superwide Boldish.gai') format('gai'),		/* Filesize: 45261 bytes, md5: f20875f86dd46a0afc841cc13f4d8d4b */
+						url('./Labtop Superwide Boldish.pfb') format('pfb'),		/* Filesize: 45261 bytes, md5: f52e9493e58977706caa6941896421df */
+						url('./Labtop Superwide Boldish.sfd') format('sfd'),		/* Filesize: 45261 bytes, md5: f6162c04ccca9699737b300fc9a397da */
+						url('./Labtop Superwide Boldish.cef') format('cef'),		/* Filesize: 45261 bytes, md5: b68dda4ac107b435cef6309a48a9602f */
+						url('./Labtop Superwide Boldish.woff') format('woff'),		/* Filesize: 16376 bytes, md5: 6d8977e73537e9e12b45238fd3aab498 */
+						url('./Labtop Superwide Boldish.gsf') format('gsf'),		/* Filesize: 45261 bytes, md5: 468de97c0de3f5902cfbdbb6c6127c6e */
+						url('./Labtop Superwide Boldish.svg') format('svg'),		/* Filesize: 74130 bytes, md5: 7d629893368c4cf4517a78c861c3147c */
+						url('./Labtop Superwide Boldish.eot') format('eot'),		/* Filesize: 45261 bytes, md5: 972a82d6d54aa4fe70bdd4b8d4c6829f */
+						url('./Labtop Superwide Boldish.pf3') format('pf3'),		/* Filesize: 45261 bytes, md5: 87e6931d61c9c03406c237259431d1c0 */
+						url('./Labtop Superwide Boldish.otf') format('otf'),		/* Filesize: 67272 bytes, md5: 30ce87920df218b7fec2d2be20e637db */
+						url('./Labtop Superwide Boldish.mf') format('mf'),		/* Filesize: 45261 bytes, md5: 38a7188d9955aec355c42cedb08425f7 */
+						url('./Labtop Superwide Boldish.ik') format('ik');		/* Filesize: 45261 bytes, md5: ab2e15cf73b1ca6671b00cc9d4ed63bb */
+}

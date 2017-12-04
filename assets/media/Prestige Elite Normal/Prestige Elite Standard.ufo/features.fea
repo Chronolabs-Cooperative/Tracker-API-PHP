@@ -1,0 +1,176 @@
+languagesystem latn dflt;
+languagesystem latn TUR ;
+
+
+# GSUB 
+
+
+lookup aaltAccessAllAlternatesinLatinlookup0 {
+  lookupflag 0;
+    sub \period by \ellipsis ;
+    sub \slash by \fraction ;
+    sub \one by \uni00B9 ;
+    sub \two by \uni00B2 ;
+    sub \three by \uni00B3 ;
+    sub \A by \ordfeminine ;
+    sub \O by \ordmasculine ;
+    sub \a by \ordfeminine ;
+    sub \o by \ordmasculine ;
+} aaltAccessAllAlternatesinLatinlookup0;
+
+lookup aaltAccessAllAlternatesinLatinlookup1 {
+  lookupflag 0;
+    sub \hyphen from [\endash \emdash \minus ];
+} aaltAccessAllAlternatesinLatinlookup1;
+
+lookup LigatureSubstitutionlookup7 {
+  lookupflag 0;
+    sub \one \fraction \four  by \onequarter;
+    sub \one \slash \four  by \onequarter;
+    sub \one \fraction \two  by \onehalf;
+    sub \one \slash \two  by \onehalf;
+    sub \three \fraction \four  by \threequarters;
+    sub \three \slash \four  by \threequarters;
+    sub \zero \fraction \zero \zero  by \perthousand;
+    sub \zero \slash \zero \zero  by \perthousand;
+} LigatureSubstitutionlookup7;
+
+lookup fracDiagonalFractionsinLatinlookup2 {
+  lookupflag 0;
+    sub [\zero ]'lookup LigatureSubstitutionlookup7  [\slash \fraction ]'lookup LigatureSubstitutionlookup7  [\zero ]'lookup LigatureSubstitutionlookup7  [\zero ]'lookup LigatureSubstitutionlookup7  ;
+    sub [\zero ]' [\slash \fraction ]' [\zero ]'  by ;
+    sub [\one ]'lookup LigatureSubstitutionlookup7  [\slash \fraction ]'lookup LigatureSubstitutionlookup7  [\four ]'lookup LigatureSubstitutionlookup7  ;
+    sub [\one ]'lookup LigatureSubstitutionlookup7  [\slash \fraction ]'lookup LigatureSubstitutionlookup7  [\two ]'lookup LigatureSubstitutionlookup7  ;
+    sub [\three ]'lookup LigatureSubstitutionlookup7  [\slash \fraction ]'lookup LigatureSubstitutionlookup7  [\four ]'lookup LigatureSubstitutionlookup7  ;
+} fracDiagonalFractionsinLatinlookup2;
+
+lookup dligDiscretionaryLigaturesinLatinlookup3 {
+  lookupflag 0;
+    sub \f \i  by \uniFB01;
+} dligDiscretionaryLigaturesinLatinlookup3;
+
+lookup dligDiscretionaryLigaturesinLatinlookup4 {
+  lookupflag 0;
+    sub \f \l  by \uniFB02;
+} dligDiscretionaryLigaturesinLatinlookup4;
+
+lookup SingleSubstitutionlookup9 {
+  lookupflag 0;
+    sub \a by \ordfeminine ;
+    sub \o by \ordmasculine ;
+} SingleSubstitutionlookup9;
+
+lookup ordnOrdinalsinLatinlookup5 {
+  lookupflag 0;
+    ignore sub [\one ] [\one ] [\a ]' ;
+    sub [\zero \one \two \three \four \five \six \seven \eight \nine ] [\a ]'lookup SingleSubstitutionlookup9  ;
+    sub [\zero \one \two \three \four \five \six \seven \eight \nine ] [\o ]'lookup SingleSubstitutionlookup9  ;
+    sub [\period ] [\zero \one \two \three \four \five \six \seven \eight \nine ] [\a ]'lookup SingleSubstitutionlookup9  ;
+    sub [\period ] [\zero \one \two \three \four \five \six \seven \eight \nine ] [\o ]'lookup SingleSubstitutionlookup9  ;
+} ordnOrdinalsinLatinlookup5;
+
+lookup supsSuperscriptinLatinlookup6 {
+  lookupflag 0;
+    sub \one by \uni00B9 ;
+    sub \two by \uni00B2 ;
+    sub \three by \uni00B3 ;
+    sub \A by \ordfeminine ;
+    sub \O by \ordmasculine ;
+    sub \a by \ordfeminine ;
+    sub \o by \ordmasculine ;
+} supsSuperscriptinLatinlookup6;
+
+feature aalt {
+
+ script latn;
+     language dflt ;
+      lookup aaltAccessAllAlternatesinLatinlookup0;
+      lookup aaltAccessAllAlternatesinLatinlookup1;
+} aalt;
+
+feature frac {
+
+ script latn;
+     language dflt ;
+      lookup fracDiagonalFractionsinLatinlookup2;
+} frac;
+
+feature dlig {
+
+ script latn;
+     language dflt ;
+      lookup dligDiscretionaryLigaturesinLatinlookup3;
+      lookup dligDiscretionaryLigaturesinLatinlookup4;
+     language TUR  exclude_dflt;
+      lookup dligDiscretionaryLigaturesinLatinlookup4;
+} dlig;
+
+feature ordn {
+
+ script latn;
+     language dflt ;
+      lookup ordnOrdinalsinLatinlookup5;
+} ordn;
+
+feature sups {
+
+ script latn;
+     language dflt ;
+      lookup supsSuperscriptinLatinlookup6;
+} sups;
+
+@GDEF_Simple = [\space \exclam \quotedbl \numbersign \dollar \ampersand 
+	\quotesingle \parenleft \parenright \asterisk \plus \comma \hyphen \period 
+	\slash \zero \one \two \three \four \five \six \seven \eight \nine \colon \semicolon 
+	\less \equal \greater \question \at \A \B \C \D \E \F \G \H \I \J \K \L \M \N \O \P \Q \R \S \T 
+	\U \V \W \X \Y \Z \bracketleft \backslash \bracketright \asciicircum \underscore 
+	\grave \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z \braceleft \bar 
+	\braceright \asciitilde \uni00A0 \exclamdown \cent \sterling \currency \yen 
+	\brokenbar \section \dieresis \copyright \ordfeminine \guillemotleft 
+	\logicalnot \uni00AD \registered \macron \degree \plusminus \uni00B2 \uni00B3 
+	\acute \mu \paragraph \periodcentered \cedilla \uni00B9 \ordmasculine 
+	\guillemotright \questiondown \Agrave \Aacute \Acircumflex \Atilde \Adieresis 
+	\Aring \AE \Ccedilla \Egrave \Eacute \Ecircumflex \Edieresis \Igrave \Iacute 
+	\Icircumflex \Idieresis \Eth \Ntilde \Ograve \Oacute \Ocircumflex \Otilde 
+	\Odieresis \multiply \Oslash \Ugrave \Uacute \Ucircumflex \Udieresis \Yacute 
+	\Thorn \germandbls \agrave \aacute \acircumflex \atilde \adieresis \aring \ae 
+	\ccedilla \egrave \eacute \ecircumflex \edieresis \igrave \iacute \icircumflex 
+	\idieresis \eth \ntilde \ograve \oacute \ocircumflex \otilde \odieresis \divide 
+	\oslash \ugrave \uacute \ucircumflex \udieresis \yacute \thorn \ydieresis 
+	\dcroat \Hbar \hbar \dotlessi \IJ \ij \kgreenlandic \Ldot \ldot \Lslash \lslash 
+	\napostrophe \Eng \eng \OE \oe \Scaron \scaron \Tbar \tbar \Ydieresis \Zcaron 
+	\zcaron \florin \circumflex \caron \uni02C9 \breve \dotaccent \ring \ogonek 
+	\tilde \hungarumlaut \Gamma \Theta \Phi \uni03A9 \alpha \delta \epsilon \uni03BC 
+	\pi \sigma \tau \phi1 \endash \emdash \underscoredbl \quoteleft \quoteright 
+	\quotesinglbase \quotereversed \quotedblleft \quotedblright \quotedblbase 
+	\dagger \daggerdbl \bullet \ellipsis \guilsinglleft \guilsinglright \exclamdbl 
+	\uni203E \fraction \uni207F \franc \peseta \Euro \afii61289 \trademark \Omega 
+	\estimated \oneeighth \threeeighths \fiveeighths \seveneighths \arrowleft 
+	\arrowup \arrowright \arrowdown \arrowboth \arrowupdn \arrowupdnbse 
+	\partialdiff \Delta \product \summation \minus \uni2215 \uni2219 \radical 
+	\infinity \intersection \integral \approxequal \notequal \equivalence 
+	\lessequal \greaterequal \dotmath \house \uni2304 \revlogicalnot \uni2319 
+	\integraltp \integralbt \SF100000 \SF110000 \SF010000 \SF030000 \SF020000 
+	\SF040000 \SF080000 \SF090000 \SF060000 \SF070000 \SF050000 \SF430000 \SF240000 
+	\SF510000 \SF520000 \SF390000 \SF220000 \SF210000 \SF250000 \SF500000 \SF490000 
+	\SF380000 \SF280000 \SF270000 \SF260000 \SF360000 \SF370000 \SF420000 \SF190000 
+	\SF200000 \SF230000 \SF470000 \SF480000 \SF410000 \SF450000 \SF460000 \SF400000 
+	\SF540000 \SF530000 \SF440000 \upblock \dnblock \block \lfblock \rtblock 
+	\ltshade \shade \dkshade \filledbox \triagup \uni25B6 \triagdn \uni25C0 \lozenge 
+	\circle \invbullet \invcircle \smileface \invsmileface \sun \female \male \spade 
+	\uni2662 \club \heart \diamond \musicalnote \uni266C \uniE000 \uniE001 \uniF638 
+	\emdash ];
+@GDEF_Ligature = [\percent \onequarter \onehalf \threequarters \perthousand 
+	\uniFB01 \uniFB02 ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, , ;
+
+} GDEF;
+
+table BASE {
+  HorizAxis.BaseTagList ideo romn;
+  HorizAxis.BaseScriptList
+	latn romn -200 0;
+} BASE;
+

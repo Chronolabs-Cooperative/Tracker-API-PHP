@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="sfthyphen" format="1">
+  <advance width="489"/>
+  <unicode hex="00AD"/>
+  <outline>
+    <contour>
+      <point x="455" y="249" type="line" smooth="yes"/>
+      <point x="455" y="245"/>
+      <point x="437" y="245" type="qcurve" smooth="yes"/>
+      <point x="89" y="245" type="line" smooth="yes"/>
+      <point x="71" y="245"/>
+      <point x="71" y="249" type="qcurve" smooth="yes"/>
+      <point x="71" y="272" type="line" smooth="yes"/>
+      <point x="71" y="276"/>
+      <point x="89" y="276" type="qcurve" smooth="yes"/>
+      <point x="437" y="276" type="line" smooth="yes"/>
+      <point x="455" y="276"/>
+      <point x="455" y="272" type="qcurve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ccaron" format="1">
+  <advance width="347"/>
+  <unicode hex="010D"/>
+  <outline>
+    <contour>
+      <point x="293" y="158" type="line" smooth="yes"/>
+      <point x="293" y="153"/>
+      <point x="278" y="153" type="qcurve" smooth="yes"/>
+      <point x="184" y="153" type="line" smooth="yes"/>
+      <point x="169" y="153"/>
+      <point x="169" y="158" type="qcurve" smooth="yes"/>
+      <point x="169" y="185" type="line" smooth="yes"/>
+      <point x="169" y="190"/>
+      <point x="184" y="190" type="qcurve" smooth="yes"/>
+      <point x="193" y="190" type="line"/>
+      <point x="193" y="593" type="line"/>
+      <point x="180" y="590" type="line"/>
+      <point x="161" y="589"/>
+      <point x="161" y="595" type="qcurve" smooth="yes"/>
+      <point x="161" y="622" type="line" smooth="yes"/>
+      <point x="161" y="627"/>
+      <point x="173" y="627" type="qcurve"/>
+      <point x="250" y="646" type="line"/>
+      <point x="269" y="647"/>
+      <point x="269" y="641" type="qcurve" smooth="yes"/>
+      <point x="269" y="190" type="line"/>
+      <point x="278" y="190" type="line" smooth="yes"/>
+      <point x="293" y="190"/>
+      <point x="293" y="185" type="qcurve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

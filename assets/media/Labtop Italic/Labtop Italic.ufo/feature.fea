@@ -1,0 +1,8 @@
+
+@GDEF_Simple = [\glyph1 \glyph2 ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , , ;
+
+} GDEF;
+

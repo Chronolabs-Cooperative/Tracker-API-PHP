@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="icircumflex" format="1">
+  <advance width="201"/>
+  <unicode hex="00EE"/>
+  <outline>
+    <contour>
+      <point x="228" y="633" type="qcurve" smooth="yes"/>
+      <point x="173" y="634" type="line" smooth="yes"/>
+      <point x="167" y="634"/>
+      <point x="159" y="636" type="qcurve"/>
+      <point x="117" y="705" type="line"/>
+      <point x="77" y="635" type="line"/>
+      <point x="69" y="633"/>
+      <point x="62" y="633" type="qcurve" smooth="yes"/>
+      <point x="7" y="633" type="line" smooth="yes"/>
+      <point x="-11" y="633"/>
+      <point x="-11" y="638" type="qcurve"/>
+      <point x="-8" y="641" type="line"/>
+      <point x="70" y="794" type="line"/>
+      <point x="78" y="796"/>
+      <point x="85" y="796" type="qcurve" smooth="yes"/>
+      <point x="150" y="796" type="line" smooth="yes"/>
+      <point x="159" y="796"/>
+      <point x="165" y="794" type="qcurve"/>
+      <point x="243" y="641" type="line"/>
+      <point x="246" y="640"/>
+      <point x="246" y="638" type="qcurve" smooth="yes"/>
+      <point x="246" y="633"/>
+    </contour>
+    <contour>
+      <point x="164" y="5" type="line" smooth="yes"/>
+      <point x="164" y="0"/>
+      <point x="147" y="0" type="qcurve" smooth="yes"/>
+      <point x="88" y="0" type="line" smooth="yes"/>
+      <point x="71" y="0"/>
+      <point x="71" y="5" type="qcurve" smooth="yes"/>
+      <point x="71" y="572" type="line" smooth="yes"/>
+      <point x="71" y="577"/>
+      <point x="88" y="577" type="qcurve" smooth="yes"/>
+      <point x="147" y="577" type="line" smooth="yes"/>
+      <point x="164" y="577"/>
+      <point x="164" y="572" type="qcurve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

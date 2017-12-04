@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Otilde" format="1">
+  <advance width="342"/>
+  <unicode hex="00D5"/>
+  <outline>
+    <contour>
+      <point x="87" y="585"/>
+      <point x="156" y="585" type="qcurve" smooth="yes"/>
+      <point x="224" y="585"/>
+      <point x="224" y="13"/>
+      <point x="156" y="13" type="qcurve" smooth="yes"/>
+      <point x="87" y="13"/>
+    </contour>
+    <contour>
+      <point x="216" y="607"/>
+      <point x="260" y="535" type="qcurve" smooth="yes"/>
+      <point x="312" y="450"/>
+      <point x="312" y="150"/>
+      <point x="260" y="65" type="qcurve" smooth="yes"/>
+      <point x="216" y="-7"/>
+      <point x="156" y="-7" type="qcurve" smooth="yes"/>
+      <point x="95" y="-7"/>
+      <point x="52" y="66" type="qcurve"/>
+      <point x="0" y="151"/>
+      <point x="0" y="300" type="qcurve" smooth="yes"/>
+      <point x="0" y="450"/>
+      <point x="52" y="535" type="qcurve" smooth="yes"/>
+      <point x="96" y="607"/>
+    </contour>
+    <contour>
+      <point x="246" y="691" type="qcurve"/>
+      <point x="246" y="661" type="line"/>
+      <point x="220" y="639"/>
+      <point x="206" y="639" type="qcurve" smooth="yes"/>
+      <point x="195" y="639"/>
+      <point x="170" y="650" type="qcurve" smooth="yes"/>
+      <point x="143" y="661"/>
+      <point x="119" y="661"/>
+      <point x="110" y="652" type="qcurve" smooth="yes"/>
+      <point x="93" y="635" type="line"/>
+      <point x="93" y="664" type="line"/>
+      <point x="122" y="687"/>
+      <point x="146" y="687"/>
+      <point x="200" y="665"/>
+      <point x="210" y="665" type="qcurve" smooth="yes"/>
+      <point x="222" y="665"/>
+      <point x="230" y="674" type="qcurve" smooth="yes"/>
+      <point x="241" y="685"/>
+    </contour>
+  </outline>
+</glyph>

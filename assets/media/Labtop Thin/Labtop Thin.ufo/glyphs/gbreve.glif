@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="gbreve" format="1">
+  <advance width="226"/>
+  <unicode hex="011F"/>
+  <outline>
+    <contour>
+      <point x="189" y="431" type="line"/>
+      <point x="189" y="161" type="line"/>
+      <point x="170" y="161" type="line"/>
+      <point x="170" y="431" type="line"/>
+      <point x="60" y="431" type="line"/>
+      <point x="168" y="641" type="line"/>
+      <point x="189" y="641" type="line"/>
+      <point x="189" y="444" type="line"/>
+      <point x="220" y="444" type="line"/>
+      <point x="220" y="431" type="line"/>
+    </contour>
+    <contour>
+      <point x="170" y="605" type="line"/>
+      <point x="89" y="444" type="line"/>
+      <point x="170" y="444" type="line"/>
+    </contour>
+  </outline>
+</glyph>

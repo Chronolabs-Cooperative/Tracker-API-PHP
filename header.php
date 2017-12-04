@@ -37,8 +37,7 @@
 	ini_set("zlib.output_compression", 'Off');
 	ini_set("zlib.output_compression_level", -1);
 	
-	require_once __DIR__.'/class/trackerdb.php';
-	require_once __DIR__.'/functions.php';
+	require_once __DIR__.'/include/functions.php';
 	require_once __DIR__.'/apiconfig.php';
 	
 	$parts = explode(".", microtime(true));
@@ -51,7 +50,7 @@
 	
 	global $domain, $protocol, $business, $entity, $contact, $referee, $peerings, $source, $ipid, $apiid;
 	
-	define('TRACKER_CACHE', DIRECTORY_SEPARATOR . 'tmp' . DIRECTORY_SEPARATOR . 'tracker' . DIRECTORY_SEPARATOR . 'cache');
+	define('TRACKER_CACHE', DIRECTORY_SEPARATOR . API_VAR_PATH . DIRECTORY_SEPARATOR . 'tracker' . DIRECTORY_SEPARATOR . 'cache');
 	if (!is_dir(TRACKER_CACHE))
 		mkdirSecure(TRACKER_CACHE, 0777, true);
 	

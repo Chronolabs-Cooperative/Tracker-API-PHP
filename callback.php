@@ -23,10 +23,10 @@
 
 	require_once  __DIR__ . DIRECTORY_SEPARATOR . "header.php";
 
-	$sql = "SELECT * FROM `apis` WHERE `id` LIKE '%s'";
-	if ($GLOBALS['trackerDB']->getRowsNum($results = $GLOBALS['trackerDB']->queryF(sprintf($sql, mysql_escape_string($GLOBALS['apiid']))))==1)
+	$sql = "SELECT * FROM `" . $GLOBALS['APIDB']->prefix('apis') . "` WHERE `id` LIKE '%s'";
+	if ($GLOBALS['APIDB']->getRowsNum($results = $GLOBALS['APIDB']->queryF(sprintf($sql, mysqli_real_escape_string($GLOBALS['apiid']))))==1)
 	{
-		$api = $GLOBALS['trackerDB']->fetchArray($results);
+		$api = $GLOBALS['APIDB']->fetchArray($results);
 	}
 	
 	$mode = !isset($_REQUEST['mode'])?md5(NULL):$_REQUEST['mode'];
@@ -36,23 +36,23 @@
 		case "register":
 			$required = array('api-id', 'api-url', 'version', 'callback', 'polinating');
 			foreach($required as $field)
-				if (!in_array($field, array_keys($_POST)))
-					die("Field \$_POST[$field] is required to operate this function!");
+				if (!in_array($field, array_keys($inner)))
+					die("Field \$inner[$field] is required to operate this function!");
 			
-			$sql = "INSERT INTO `apis` (`id`, `api-url`, `version`, `callback`, `polinating`, `created`) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')";
-			if ($GLOBALS['trackerDB']->queryF(sprintf($sql, mysql_escape_string($_POST['api-id']), mysql_escape_string($_POST['api-url']), mysql_escape_string($_POST['version']), mysql_escape_string($_POST['callback']), ($_POST['polinating']==true?'Yes':'No'), time())))
+			$sql = "INSERT INTO `" . $GLOBALS['APIDB']->prefix('apis') . "` (`id`, `api-url`, `version`, `callback`, `polinating`, `created`) VALUES ('%s', '%s', '%s', '%s', '%s', '%s')";
+			if ($GLOBALS['APIDB']->queryF(sprintf($sql, mysqli_real_escape_string($inner['api-id']), mysqli_real_escape_string($inner['api-url']), mysqli_real_escape_string($inner['version']), mysqli_real_escape_string($inner['callback']), ($inner['polinating']==true?'Yes':'No'), time())))
 			{
-				if ($_POST['polinating']==true)
+				if ($inner['polinating']==true)
 				{
-					@setCallBackURI(sprintf($_POST['callback'], $mode), 145, 145, array('api-id'=>$api['id'], 'api-url' => $api['api-url'], 'version' => $api['version'], 'callback' => $api['callback'], 'polinating' => ($api['polinating']=='Yes'?true:false)));
+					@setCallBackURI(sprintf($inner['callback'], $mode), 145, 145, array('api-id'=>$api['id'], 'api-url' => $api['api-url'], 'version' => $api['version'], 'callback' => $api['callback'], 'polinating' => ($api['polinating']=='Yes'?true:false)));
 					if (API_URL === API_ROOT_NODE)
 					{
-						$sql = "SELECT * FROM `apis` WHERE `id` NOT LIKE '%s' AND  `id` NOT LIKE '%s' AND `polinating` = 'Yes'";
-						if ($GLOBALS['trackerDB']->getRowsNum($results = $GLOBALS['trackerDB']->queryF(sprintf($sql, mysql_escape_string($GLOBALS['apiid']), mysql_escape_string($_POST['id']))))>=1)
+						$sql = "SELECT * FROM `" . $GLOBALS['APIDB']->prefix('apis') . "` WHERE `id` NOT LIKE '%s' AND  `id` NOT LIKE '%s' AND `polinating` = 'Yes'";
+						if ($GLOBALS['APIDB']->getRowsNum($results = $GLOBALS['APIDB']->queryF(sprintf($sql, mysqli_real_escape_string($GLOBALS['apiid']), mysqli_real_escape_string($inner['id']))))>=1)
 						{
-							while($other = $GLOBALS['trackerDB']->fetchArray($results))
+							while($other = $GLOBALS['APIDB']->fetchArray($results))
 							{
-								@setCallBackURI(sprintf($other['callback'], $mode), 145, 145, array('api-id'=>$_POST['api-id'], 'api-url' => $_POST['api-url'],  'version' => $_POST['version'], 'callback' => $_POST['callback'], 'polinating' => $_POST['polinating']));
+								@setCallBackURI(sprintf($other['callback'], $mode), 145, 145, array('api-id'=>$inner['api-id'], 'api-url' => $inner['api-url'],  'version' => $inner['version'], 'callback' => $inner['callback'], 'polinating' => $inner['polinating']));
 							}
 						}
 					}
@@ -63,43 +63,43 @@
 		case "peers":
 			
 			foreach (array("info_hash","peer_id","port","downloaded","uploaded","left") as $x)
-				if (!isset($_POST['peer-data'][$x]))
+				if (!isset($inner['peer-data'][$x]))
 					err("Missing key: $x");
 	
 			foreach (array("info_hash","peer_id") as $x)
-				if (strlen($_POST['peer-data'][$x]) != 20) {
-					err("Invalid $x (" . strlen($_POST['peer-data'][$x]) . " - " . urlencode($_POST['peer-data'][$x]) . ")");
+				if (strlen($inner['peer-data'][$x]) != 20) {
+					err("Invalid $x (" . strlen($inner['peer-data'][$x]) . " - " . urlencode($inner['peer-data'][$x]) . ")");
 				}
 	
-			$ipid = getIPIdentity($_POST['ip-addy']);
-			$infohash = bin2hex($_POST['peer-data']['info_hash']);
-			$peerid = bin2hex($_POST['peer-data']['peer_id']);
-			$port = 0 + $_POST['peer-data']['port'];
-			$downloaded = 0 + $_POST['peer-data']['downloaded'];
-			$uploaded = 0 + $_POST['peer-data']['uploaded'];
-			$left = 0 + $_POST['peer-data']['left'];
-			$apiid = $_POST['api-id'];
+			$ipid = getIPIdentity($inner['ip-addy']);
+			$infohash = bin2hex($inner['peer-data']['info_hash']);
+			$peerid = bin2hex($inner['peer-data']['peer_id']);
+			$port = 0 + $inner['peer-data']['port'];
+			$downloaded = 0 + $inner['peer-data']['downloaded'];
+			$uploaded = 0 + $inner['peer-data']['uploaded'];
+			$left = 0 + $inner['peer-data']['left'];
+			$apiid = $inner['api-id'];
 			
 			$rsize = 50;
 			foreach(array("num want", "numwant", "num_want") as $k)
 			{
-				if (isset($_POST['peer-data'][$k]))
+				if (isset($inner['peer-data'][$k]))
 				{
-					$rsize = 0 + $_POST['peer-data'][$k];
+					$rsize = 0 + $inner['peer-data'][$k];
 					break;
 				}
 			}
 			
-			if (!isset($_POST['peer-data']['event']))
+			if (!isset($inner['peer-data']['event']))
 				$event = "";
 			else
-				$event = $_POST['peer-data']['event'];
+				$event = $inner['peer-data']['event'];
 	
 			$seeder = ($left == 0) ? "yes" : "no";
 			
 			$torrentid = getTorrentIdentity($infohash);
-			$res = $GLOBALS['trackerDB']->queryF("SELECT id, seeders + leechers AS numpeers, added AS ts FROM `torrents` WHERE `banned` = 'no' AND id = " . $torrentid);
-			$torrent = $GLOBALS['trackerDB']->fetchArray($res);
+			$res = $GLOBALS['APIDB']->queryF("SELECT id, seeders + leechers AS numpeers, added AS ts FROM `" . $GLOBALS['APIDB']->prefix('torrents') . "` WHERE `banned` = 'no' AND id = " . $torrentid);
+			$torrent = $GLOBALS['APIDB']->fetchArray($res);
 			if (!$torrent)
 				err("torrent not registered with this tracker!");
 			
@@ -109,16 +109,16 @@
 			$limit = "";
 			if ($numpeers > $rsize)
 				$limit = "ORDER BY RAND() LIMIT $rsize";
-			$res = $GLOBALS['trackerDB']->queryF("SELECT $fields FROM `peers` WHERE torrentid = $torrentid AND connectable = 'yes' $limit");
+			$res = $GLOBALS['APIDB']->queryF("SELECT $fields FROM `" . $GLOBALS['APIDB']->prefix('peers') . "` WHERE torrentid = $torrentid AND connectable = 'yes' $limit");
 
-			if($_POST['peer-data']['compact'] != 1)
+			if($inner['peer-data']['compact'] != 1)
 			{
 				$compact = 'no';
 			} else {
 				$compact = 'yes';
 			}
 
-			if($_POST['peer-data']['supportcrypto'] != 1)
+			if($inner['peer-data']['supportcrypto'] != 1)
 			{
 				$crypto = 'no';
 			} else
@@ -127,7 +127,7 @@
 			$updateset = array();
 			if ($event == "stopped")
 			{
-				$GLOBALS['trackerDB']->queryF("DELETE FROM `peers` WHERE `torrentid` = $torrentid AND `peerid` = '$peerid' AND `apiid` = '$apiid'");
+				$GLOBALS['APIDB']->queryF("DELETE FROM `" . $GLOBALS['APIDB']->prefix('peers') . "` WHERE `torrentid` = $torrentid AND `peerid` = '$peerid' AND `apiid` = '$apiid'");
 				if (mysql_affected_rows())
 				{
 					if ($self["seeder"] == "yes")
@@ -139,7 +139,7 @@
 				if ($event == "completed")
 					$updateset[] = "times_completed = times_completed + 1";
 
-				$GLOBALS['trackerDB']->queryF("UPDATE `peers` SET `uploaded` = $uploaded, `downloaded` = $downloaded, `left` = $left, `lastaction` = ".time().", `seeder` = '$seeder'"
+				$GLOBALS['APIDB']->queryF("UPDATE `" . $GLOBALS['APIDB']->prefix('peers') . "` SET `uploaded` = $uploaded, `downloaded` = $downloaded, `left` = $left, `lastaction` = ".time().", `seeder` = '$seeder'"
 						. ($seeder == "yes" && $self["seeder"] != $seeder ? ", finished = " . time() : "") . " WHERE  `torrentid` = $torrentid AND `peerid` = '$peerid' AND `apiid` = '$apiid'");
 				if (mysql_affected_rows() && $self["seeder"] != $seeder)
 				{
@@ -147,13 +147,13 @@
 					{
 						$updateset[] = "seeders = seeders + 1";
 						$updateset[] = "leechers = leechers - 1";
-						$sql = "UPDATE `networking_to_torrents` SET `finished` = '%s', `left` = '%s' WHERE `ipid` = '%s' AND `torrentid` = '%s'";
-						$GLOBALS['trackerDB']->queryF(sprintf($sql, time(),0,$GLOBALS['ipid'],$torrentid));
+						$sql = "UPDATE `" . $GLOBALS['APIDB']->prefix('networking_to_torrents') . "` SET `finished` = '%s', `left` = '%s' WHERE `ipid` = '%s' AND `torrentid` = '%s'";
+						$GLOBALS['APIDB']->queryF(sprintf($sql, time(),0,$GLOBALS['ipid'],$torrentid));
 					}
 					else
 					{
-						$sql = "UPDATE `networking_to_torrents` SET `last` = '%s', `left` = '%s' WHERE `ipid` = '%s' AND `torrentid` = '%s'";
-						$GLOBALS['trackerDB']->queryF(sprintf($sql, time(),0,$GLOBALS['ipid'],$torrentid));
+						$sql = "UPDATE `" . $GLOBALS['APIDB']->prefix('networking_to_torrents') . "` SET `last` = '%s', `left` = '%s' WHERE `ipid` = '%s' AND `torrentid` = '%s'";
+						$GLOBALS['APIDB']->queryF(sprintf($sql, time(),0,$GLOBALS['ipid'],$torrentid));
 						$updateset[] = "seeders = seeders - 1";
 						$updateset[] = "leechers = leechers + 1";
 					}
@@ -174,17 +174,17 @@
 						@fclose($sockres);
 					}
 
-					$ret = $GLOBALS['trackerDB']->queryF($sql = "INSERT INTO `peers` (`apiid`,`connectable`, `torrentid`, `peerid`, `ipid`, `port`, `uploaded`, `downloaded`, `left`, `started`, `event`, `seeder`, `agent`, `key`, `compact`, `supportcrypto`) VALUES ('".$GLOBALS['apiid'] ."', '$connectable', $torrentid, '$peerid', '$ipid', $port, $uploaded, $downloaded, $left, ".time().", '$event', '$seeder', '" . mysql_escape_string($agent) . "','" . mysql_escape_string($_POST['peer-data']['key']) . "', '$compact', '$crypto')");
+					$ret = $GLOBALS['APIDB']->queryF($sql = "INSERT INTO `" . $GLOBALS['APIDB']->prefix('peers') . "` (`apiid`,`connectable`, `torrentid`, `peerid`, `ipid`, `port`, `uploaded`, `downloaded`, `left`, `started`, `event`, `seeder`, `agent`, `key`, `compact`, `supportcrypto`) VALUES ('".$GLOBALS['apiid'] ."', '$connectable', $torrentid, '$peerid', '$ipid', $port, $uploaded, $downloaded, $left, ".time().", '$event', '$seeder', '" . mysqli_real_escape_string($agent) . "','" . mysqli_real_escape_string($inner['peer-data']['key']) . "', '$compact', '$crypto')");
 					
 					if ($seeder == "yes")
 					{
 						$updateset[] = "seeders = seeders + 1";
-						$sql = "UPDATE `networking_to_torrents` SET `finished` = '%s', `left` = '%s' WHERE `ipid` = '%s' AND `torrentid` = '%s'";
-						$GLOBALS['trackerDB']->queryF(sprintf($sql, time(),0,$GLOBALS['ipid'],$torrentid));
+						$sql = "UPDATE `" . $GLOBALS['APIDB']->prefix('networking_to_torrents') . "` SET `finished` = '%s', `left` = '%s' WHERE `ipid` = '%s' AND `torrentid` = '%s'";
+						$GLOBALS['APIDB']->queryF(sprintf($sql, time(),0,$GLOBALS['ipid'],$torrentid));
 					} else {
 						$updateset[] = "leechers = leechers + 1";
-						$sql = "UPDATE `networking_to_torrents` SET `last` = '%s', `left` = '%s' WHERE `ipid` = '%s' AND `torrentid` = '%s'";
-						$GLOBALS['trackerDB']->queryF(sprintf($sql, time(),0,$GLOBALS['ipid'],$torrentid));
+						$sql = "UPDATE `" . $GLOBALS['APIDB']->prefix('networking_to_torrents') . "` SET `last` = '%s', `left` = '%s' WHERE `ipid` = '%s' AND `torrentid` = '%s'";
+						$GLOBALS['APIDB']->queryF(sprintf($sql, time(),0,$GLOBALS['ipid'],$torrentid));
 					}
 				}
 			}
@@ -197,7 +197,7 @@
 			}
 			
 			if (count($updateset))
-				$GLOBALS['trackerDB']->queryF("UPDATE `torrents` SET " . implode(",", $updateset) . " WHERE id = $torrentid");
+				$GLOBALS['APIDB']->queryF("UPDATE `" . $GLOBALS['APIDB']->prefix('torrents') . "` SET " . implode(",", $updateset) . " WHERE id = $torrentid");
 					
 		default:
 			

@@ -1,0 +1,115 @@
+/** Life BT Bold Italic */
+@font-face {
+	font-family:		'Life BT Bold Italic';
+	src:				url('./Life BT Bold Italic.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Life BT Bold Italic.cef') format('cef'),		/* Filesize: 35314 bytes, md5: 03716f4d4bf8396573568ebee627591e */
+						url('./Life BT Bold Italic.ik') format('ik'),		/* Filesize: 35314 bytes, md5: 7ef895969a77d4008667942dd9396969 */
+						url('./Life BT Bold Italic.pmf') format('pmf'),		/* Filesize: 35314 bytes, md5: 0cdf85215f7a47d7ff0228141f0b52d9 */
+						url('./Life BT Bold Italic.dfont') format('dfont'),		/* Filesize: 22086 bytes, md5: 23f1cdc2a785df163a6caf21083a5399 */
+						url('./Life BT Bold Italic.hqx') format('hqx'),		/* Filesize: 35314 bytes, md5: 660b08bd356d6af4d44496a80bd63a43 */
+						url('./Life BT Bold Italic.bin') format('bin'),		/* Filesize: 36096 bytes, md5: e439db259d88960b8f53d518edc59bbd */
+						url('./Life BT Bold Italic.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Life BT Bold Italic.cff') format('cff'),		/* Filesize: 21181 bytes, md5: 335c2e3d2b72e882a660ef39de02aa08 */
+						url('./Life BT Bold Italic.woff') format('woff'),		/* Filesize: 14124 bytes, md5: 4509308e35c44b4b8670e997c04a6e92 */
+						url('./Life BT Bold Italic.gai') format('gai'),		/* Filesize: 35314 bytes, md5: 7d56b24ee95b2ec54a44f7868838f021 */
+						url('./Life BT Bold Italic.t42') format('t42'),		/* Filesize: 47299 bytes, md5: 14281af881599ae76aef0362cbcc525f */
+						url('./Life BT Bold Italic.otf') format('otf'),		/* Filesize: 59656 bytes, md5: 651f5df6fc24ba6a99e9d5ff5cb6e736 */
+						url('./Life BT Bold Italic.pfa') format('pfa'),		/* Filesize: 67845 bytes, md5: 59ca841373110c44aa1295d6e9078589 */
+						url('./Life BT Bold Italic.svg') format('svg'),		/* Filesize: 64380 bytes, md5: 8d4d3f9c42b13875ce766d0b5a06c598 */
+						url('./Life BT Bold Italic.gsf') format('gsf'),		/* Filesize: 35314 bytes, md5: 1eff3632ce19ceffaa49f205223c53f4 */
+						url('./Life BT Bold Italic.ttf') format('ttf'),		/* Filesize: 21060 bytes, md5: 7b86fd47b0925316028c664dd87760d6 */
+						url('./Life BT Bold Italic.pfb') format('pfb'),		/* Filesize: 35314 bytes, md5: f0e9208cb497ee918fd1a33b56a33585 */
+						url('./Life BT Bold Italic.eot') format('eot'),		/* Filesize: 35314 bytes, md5: b55c39e829031f20bb9ccbfd568a3616 */
+						url('./Life BT Bold Italic.pcf') format('pcf'),		/* Filesize: 35314 bytes, md5: 3a2a09a7aa0d22ccfad19e420a313b9a */
+						url('./Life BT Bold Italic.mf') format('mf'),		/* Filesize: 35314 bytes, md5: 5492d1a0980cff14793ee8602ea913af */
+						url('./Life BT Bold Italic.pf3') format('pf3'),		/* Filesize: 35314 bytes, md5: a66222affa8934aefb3b3425197f595b */
+						url('./Life BT Bold Italic.sfd') format('sfd'),		/* Filesize: 35314 bytes, md5: f7f8a5faf0cb72d287aefcfa76836b18 */
+						url('./Life BT Bold Italic.pt3') format('pt3');		/* Filesize: 146589 bytes, md5: 99e9ae2659f88b9a161830d221d9c2aa */
+}
+
+/** Life BT Bold Italic */
+@font-face {
+	font-family:		'life-bt-bold-italic';
+	src:				url('./Life BT Bold Italic.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Life BT Bold Italic.cef') format('cef'),		/* Filesize: 35314 bytes, md5: 03716f4d4bf8396573568ebee627591e */
+						url('./Life BT Bold Italic.ik') format('ik'),		/* Filesize: 35314 bytes, md5: 7ef895969a77d4008667942dd9396969 */
+						url('./Life BT Bold Italic.pmf') format('pmf'),		/* Filesize: 35314 bytes, md5: 0cdf85215f7a47d7ff0228141f0b52d9 */
+						url('./Life BT Bold Italic.dfont') format('dfont'),		/* Filesize: 22086 bytes, md5: 23f1cdc2a785df163a6caf21083a5399 */
+						url('./Life BT Bold Italic.hqx') format('hqx'),		/* Filesize: 35314 bytes, md5: 660b08bd356d6af4d44496a80bd63a43 */
+						url('./Life BT Bold Italic.bin') format('bin'),		/* Filesize: 36096 bytes, md5: e439db259d88960b8f53d518edc59bbd */
+						url('./Life BT Bold Italic.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Life BT Bold Italic.cff') format('cff'),		/* Filesize: 21181 bytes, md5: 335c2e3d2b72e882a660ef39de02aa08 */
+						url('./Life BT Bold Italic.woff') format('woff'),		/* Filesize: 14124 bytes, md5: 4509308e35c44b4b8670e997c04a6e92 */
+						url('./Life BT Bold Italic.gai') format('gai'),		/* Filesize: 35314 bytes, md5: 7d56b24ee95b2ec54a44f7868838f021 */
+						url('./Life BT Bold Italic.t42') format('t42'),		/* Filesize: 47299 bytes, md5: 14281af881599ae76aef0362cbcc525f */
+						url('./Life BT Bold Italic.otf') format('otf'),		/* Filesize: 59656 bytes, md5: 651f5df6fc24ba6a99e9d5ff5cb6e736 */
+						url('./Life BT Bold Italic.pfa') format('pfa'),		/* Filesize: 67845 bytes, md5: 59ca841373110c44aa1295d6e9078589 */
+						url('./Life BT Bold Italic.svg') format('svg'),		/* Filesize: 64380 bytes, md5: 8d4d3f9c42b13875ce766d0b5a06c598 */
+						url('./Life BT Bold Italic.gsf') format('gsf'),		/* Filesize: 35314 bytes, md5: 1eff3632ce19ceffaa49f205223c53f4 */
+						url('./Life BT Bold Italic.ttf') format('ttf'),		/* Filesize: 21060 bytes, md5: 7b86fd47b0925316028c664dd87760d6 */
+						url('./Life BT Bold Italic.pfb') format('pfb'),		/* Filesize: 35314 bytes, md5: f0e9208cb497ee918fd1a33b56a33585 */
+						url('./Life BT Bold Italic.eot') format('eot'),		/* Filesize: 35314 bytes, md5: b55c39e829031f20bb9ccbfd568a3616 */
+						url('./Life BT Bold Italic.pcf') format('pcf'),		/* Filesize: 35314 bytes, md5: 3a2a09a7aa0d22ccfad19e420a313b9a */
+						url('./Life BT Bold Italic.mf') format('mf'),		/* Filesize: 35314 bytes, md5: 5492d1a0980cff14793ee8602ea913af */
+						url('./Life BT Bold Italic.pf3') format('pf3'),		/* Filesize: 35314 bytes, md5: a66222affa8934aefb3b3425197f595b */
+						url('./Life BT Bold Italic.sfd') format('sfd'),		/* Filesize: 35314 bytes, md5: f7f8a5faf0cb72d287aefcfa76836b18 */
+						url('./Life BT Bold Italic.pt3') format('pt3');		/* Filesize: 146589 bytes, md5: 99e9ae2659f88b9a161830d221d9c2aa */
+}
+
+/** Life BT Bold Italic */
+@font-face {
+	font-family:		'3OyKA7SK5iSA';
+	src:				url('./Life BT Bold Italic.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Life BT Bold Italic.cef') format('cef'),		/* Filesize: 35314 bytes, md5: 03716f4d4bf8396573568ebee627591e */
+						url('./Life BT Bold Italic.ik') format('ik'),		/* Filesize: 35314 bytes, md5: 7ef895969a77d4008667942dd9396969 */
+						url('./Life BT Bold Italic.pmf') format('pmf'),		/* Filesize: 35314 bytes, md5: 0cdf85215f7a47d7ff0228141f0b52d9 */
+						url('./Life BT Bold Italic.dfont') format('dfont'),		/* Filesize: 22086 bytes, md5: 23f1cdc2a785df163a6caf21083a5399 */
+						url('./Life BT Bold Italic.hqx') format('hqx'),		/* Filesize: 35314 bytes, md5: 660b08bd356d6af4d44496a80bd63a43 */
+						url('./Life BT Bold Italic.bin') format('bin'),		/* Filesize: 36096 bytes, md5: e439db259d88960b8f53d518edc59bbd */
+						url('./Life BT Bold Italic.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Life BT Bold Italic.cff') format('cff'),		/* Filesize: 21181 bytes, md5: 335c2e3d2b72e882a660ef39de02aa08 */
+						url('./Life BT Bold Italic.woff') format('woff'),		/* Filesize: 14124 bytes, md5: 4509308e35c44b4b8670e997c04a6e92 */
+						url('./Life BT Bold Italic.gai') format('gai'),		/* Filesize: 35314 bytes, md5: 7d56b24ee95b2ec54a44f7868838f021 */
+						url('./Life BT Bold Italic.t42') format('t42'),		/* Filesize: 47299 bytes, md5: 14281af881599ae76aef0362cbcc525f */
+						url('./Life BT Bold Italic.otf') format('otf'),		/* Filesize: 59656 bytes, md5: 651f5df6fc24ba6a99e9d5ff5cb6e736 */
+						url('./Life BT Bold Italic.pfa') format('pfa'),		/* Filesize: 67845 bytes, md5: 59ca841373110c44aa1295d6e9078589 */
+						url('./Life BT Bold Italic.svg') format('svg'),		/* Filesize: 64380 bytes, md5: 8d4d3f9c42b13875ce766d0b5a06c598 */
+						url('./Life BT Bold Italic.gsf') format('gsf'),		/* Filesize: 35314 bytes, md5: 1eff3632ce19ceffaa49f205223c53f4 */
+						url('./Life BT Bold Italic.ttf') format('ttf'),		/* Filesize: 21060 bytes, md5: 7b86fd47b0925316028c664dd87760d6 */
+						url('./Life BT Bold Italic.pfb') format('pfb'),		/* Filesize: 35314 bytes, md5: f0e9208cb497ee918fd1a33b56a33585 */
+						url('./Life BT Bold Italic.eot') format('eot'),		/* Filesize: 35314 bytes, md5: b55c39e829031f20bb9ccbfd568a3616 */
+						url('./Life BT Bold Italic.pcf') format('pcf'),		/* Filesize: 35314 bytes, md5: 3a2a09a7aa0d22ccfad19e420a313b9a */
+						url('./Life BT Bold Italic.mf') format('mf'),		/* Filesize: 35314 bytes, md5: 5492d1a0980cff14793ee8602ea913af */
+						url('./Life BT Bold Italic.pf3') format('pf3'),		/* Filesize: 35314 bytes, md5: a66222affa8934aefb3b3425197f595b */
+						url('./Life BT Bold Italic.sfd') format('sfd'),		/* Filesize: 35314 bytes, md5: f7f8a5faf0cb72d287aefcfa76836b18 */
+						url('./Life BT Bold Italic.pt3') format('pt3');		/* Filesize: 146589 bytes, md5: 99e9ae2659f88b9a161830d221d9c2aa */
+}
+
+/** Life BT Bold Italic */
+@font-face {
+	font-family:		'coas';
+	src:				url('./Life BT Bold Italic.fon') format('fon'),		/* Filesize: 288 bytes, md5: d28c94d5362058b68c80214a3105375b */
+						url('./Life BT Bold Italic.cef') format('cef'),		/* Filesize: 35314 bytes, md5: 03716f4d4bf8396573568ebee627591e */
+						url('./Life BT Bold Italic.ik') format('ik'),		/* Filesize: 35314 bytes, md5: 7ef895969a77d4008667942dd9396969 */
+						url('./Life BT Bold Italic.pmf') format('pmf'),		/* Filesize: 35314 bytes, md5: 0cdf85215f7a47d7ff0228141f0b52d9 */
+						url('./Life BT Bold Italic.dfont') format('dfont'),		/* Filesize: 22086 bytes, md5: 23f1cdc2a785df163a6caf21083a5399 */
+						url('./Life BT Bold Italic.hqx') format('hqx'),		/* Filesize: 35314 bytes, md5: 660b08bd356d6af4d44496a80bd63a43 */
+						url('./Life BT Bold Italic.bin') format('bin'),		/* Filesize: 36096 bytes, md5: e439db259d88960b8f53d518edc59bbd */
+						url('./Life BT Bold Italic.ufo') format('ufo'),		/* Filesize: 4096 bytes, md5: d41d8cd98f00b204e9800998ecf8427e */
+						url('./Life BT Bold Italic.cff') format('cff'),		/* Filesize: 21181 bytes, md5: 335c2e3d2b72e882a660ef39de02aa08 */
+						url('./Life BT Bold Italic.woff') format('woff'),		/* Filesize: 14124 bytes, md5: 4509308e35c44b4b8670e997c04a6e92 */
+						url('./Life BT Bold Italic.gai') format('gai'),		/* Filesize: 35314 bytes, md5: 7d56b24ee95b2ec54a44f7868838f021 */
+						url('./Life BT Bold Italic.t42') format('t42'),		/* Filesize: 47299 bytes, md5: 14281af881599ae76aef0362cbcc525f */
+						url('./Life BT Bold Italic.otf') format('otf'),		/* Filesize: 59656 bytes, md5: 651f5df6fc24ba6a99e9d5ff5cb6e736 */
+						url('./Life BT Bold Italic.pfa') format('pfa'),		/* Filesize: 67845 bytes, md5: 59ca841373110c44aa1295d6e9078589 */
+						url('./Life BT Bold Italic.svg') format('svg'),		/* Filesize: 64380 bytes, md5: 8d4d3f9c42b13875ce766d0b5a06c598 */
+						url('./Life BT Bold Italic.gsf') format('gsf'),		/* Filesize: 35314 bytes, md5: 1eff3632ce19ceffaa49f205223c53f4 */
+						url('./Life BT Bold Italic.ttf') format('ttf'),		/* Filesize: 21060 bytes, md5: 7b86fd47b0925316028c664dd87760d6 */
+						url('./Life BT Bold Italic.pfb') format('pfb'),		/* Filesize: 35314 bytes, md5: f0e9208cb497ee918fd1a33b56a33585 */
+						url('./Life BT Bold Italic.eot') format('eot'),		/* Filesize: 35314 bytes, md5: b55c39e829031f20bb9ccbfd568a3616 */
+						url('./Life BT Bold Italic.pcf') format('pcf'),		/* Filesize: 35314 bytes, md5: 3a2a09a7aa0d22ccfad19e420a313b9a */
+						url('./Life BT Bold Italic.mf') format('mf'),		/* Filesize: 35314 bytes, md5: 5492d1a0980cff14793ee8602ea913af */
+						url('./Life BT Bold Italic.pf3') format('pf3'),		/* Filesize: 35314 bytes, md5: a66222affa8934aefb3b3425197f595b */
+						url('./Life BT Bold Italic.sfd') format('sfd'),		/* Filesize: 35314 bytes, md5: f7f8a5faf0cb72d287aefcfa76836b18 */
+						url('./Life BT Bold Italic.pt3') format('pt3');		/* Filesize: 146589 bytes, md5: 99e9ae2659f88b9a161830d221d9c2aa */
+}

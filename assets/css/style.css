@@ -1,0 +1,83 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	font-family: "Labtop", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.398633em;
+	text-align:justify;
+}
+.main {
+	font-family: "Labtop Thin" !important;
+	font-size: 1.179894em;
+	border:3px solid #000000;
+	border-radius:15px;
+	background-color:#feeebe;
+	padding:39px 39px 39px 39px;
+	margin:64px 64px 64px 64px;
+	-webkit-box-shadow: 7px 7px 10px 0px rgba(108, 80, 99, 0.72);
+	-moz-box-shadow:    7px 7px 10px 0px rgba(108, 80, 99, 0.72);
+	box-shadow:         7px 7px 10px 0px rgba(108, 80, 99, 0.72);
+}
+h1 {
+	font-family: "Labtop Superwide Boldish" !important;
+	font-weight:bold;
+	font-size:1.456554em;
+	background-color:#FFEED9;
+	border-radius:15px;
+	padding:10px 10px 10px 10px;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+h2 {
+	font-family: "Labtop Bold" !important;
+	font-weight:500;
+	font-size:1.2495em;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+blockquote {
+	margin-left:25px;
+	margin-right:25px;
+	font-family: "Prestige Elite", "Courier New", Courier, monospace !important;
+	font-size: 0,844441em;
+	margin-bottom:25px;
+	padding: 25px 25px 25px 25px;
+	border:dotted;
+	background-color:#fefefe;
+	-webkit-box-shadow: 7px 7px 10px 0px rgba(108, 80, 99, 0.72);
+	-moz-box-shadow:    7px 7px 10px 0px rgba(108, 80, 99, 0.72);
+	box-shadow:         7px 7px 10px 0px rgba(108, 80, 99, 0.72);
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	border-radius: 14px;
+	text-shadow: 2px 2px 2px rgba(103, 87, 101, 0.82);
+}
+p {
+	font-family: "Labtop", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1.43525em;
+	margin-bottom:12px;
+}
+
+input, button, textarea, radio, select, label
+{
+	font-family: "Prestigue Elite Bold" !important;
+	font-size:1.211115em;
+	margin: 3px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.help-title-text
+{
+	font-family: "Labtop Bold Italics" !important;
+	font-weight:300;
+	font-size:0.8761145em;
+	margin-top: 6px;
+	color: rgb(0,120,0) !important;
+}
+
+.help-url-example
+{
+	font-family: "Prestige Elite Bold" !important;
+	font-weight:600;
+	font-size:0.6781115em;
+	margin-top: 3px;
+}
