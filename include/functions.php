@@ -21,7 +21,6 @@
  */
 
 require_once __DIR__.'/common.php';
-require_once dirname(__DIR__).'/class/APIDB.php';
 
 
 if (!function_exists("setCallBackURI")) {
@@ -460,6 +459,9 @@ if (!function_exists("getAPIIdentity")) {
 	 */
 	function getAPIIdentity( $url,  $version, $callback, $polinating = true, $root = "http://tracker.snails.email" ) {
 		
+	    if (!is_object($GLOBALS['APIDB']))
+	       return false;
+	    
 		$sql = "SELECT * FROM `" . $GLOBALS['APIDB']->prefix('apis') . "` WHERE `api-url` LIKE '%s'";
 		if ($GLOBALS['APIDB']->getRowsNum($results = $GLOBALS['APIDB']->queryF(sprintf($sql, mysqli_real_escape_string($url))))==1)
 		{
