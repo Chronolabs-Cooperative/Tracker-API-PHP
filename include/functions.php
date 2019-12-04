@@ -23,6 +23,39 @@
 require_once __DIR__.'/common.php';
 
 
+if (!function_exists("bcmod")) {
+/**
+* my_bcmod - get modulus (substitute for bcmod)
+* string my_bcmod ( string left_operand, int modulus )
+* left_operand can be really big, but be carefull with modulus :(
+* by Andrius Baranauskas and Laurynas Butkus :) Vilnius, Lithuania
+**/
+function bcmod( $x, $y )
+{
+    // how many numbers to take at once? carefull not to exceed (int)
+    $take = 5;    
+    $mod = '';
+
+    do
+    {
+        $a = (int)$mod.substr( $x, 0, $take );
+        $x = substr( $x, $take );
+        $mod = $a % $y;   
+    }
+    while ( strlen($x) );
+
+    return (int)$mod;
+}
+}
+
+if (!function_exists("setUserAgentID")) {
+	function setUserAgentID($useragent) {
+		return bcmod(base_convert(sha1($useragent), 16, 10), 1234567890);
+	}
+
+
+}
+
 if (!function_exists("setCallBackURI")) {
 
 	/* function getURIData()
@@ -382,13 +415,20 @@ if (!function_exists("getRandomInfoHash")) {
 	 */
 	function getRandomInfoHash( ) {
 		$i = -10;
+		$sql = "SELECT count(*) FROM `" . $GLOBALS['APIDB']->prefix('torrents') . "` WHERE 1 = 1 ";
+		$results = $GLOBALS['APIDB']->queryF($sql);
+		list($count) = $GLOBALS['APIDB']->fetchRow($results);
+		if ($count < 2)
+			return '0x0x0x0x0x0x0x0x0x0x0x0';
+
 		while(strlen($torrent['info_hash']) == 0 || $i < 1)
 		{
 			$sql = "SELECT * FROM `" . $GLOBALS['APIDB']->prefix('torrents') . "` ORDER BY RAND() LIMIT 1";
 			if ($GLOBALS['APIDB']->getRowsNum($results = $GLOBALS['APIDB']->queryF(sprintf($sql, mysqli_real_escape_string($infohash))))==1)
 			{
 				$torrent = $GLOBALS['APIDB']->fetchArray($results);
-			}
+			} else 
+				continue;
 			$i++;
 		}
 		return strlen($torrent['info_hash']) == 0? sha1(NULL):$torrent['info_hash'];

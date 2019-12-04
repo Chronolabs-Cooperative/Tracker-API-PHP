@@ -31,7 +31,7 @@ include_once './header.php';
  * @var unknown_type
  */
 $odds = $inner = array();
-foreach($inner as $key => $values) {
+foreach($_GET as $key => $values) {
     if (!isset($inner[$key])) {
         $inner[$key] = $values;
     } elseif (!in_array(!is_array($values) ? $values : md5(json_encode($values, true)), array_keys($odds[$key]))) {
@@ -96,6 +96,7 @@ if ($help==true) {
 	include dirname(__FILE__).'/help.php';
 	exit;
 }
+
 /*
 session_start();
 if (!in_array(whitelistGetIP(true), whitelistGetIPAddy())) {
@@ -111,10 +112,10 @@ if (!in_array(whitelistGetIP(true), whitelistGetIPAddy())) {
 	}
 }
 */
-
+		
 if (function_exists('http_response_code'))
 	http_response_code(200);
-
+	
 switch ($output) {
 	default:
 		header('Content-type: text/plain');
@@ -127,6 +128,7 @@ switch ($output) {
 		echo '</pre>';
 		break;
 	case 'raw':
+	    header('Content-type: application/x-httpd-php');
 		echo '<?php return ' . var_export(getAPIDataArray($mode, $clause, $state, $name, $output, $version)) . "; ?>";
 		break;
 	case 'json':

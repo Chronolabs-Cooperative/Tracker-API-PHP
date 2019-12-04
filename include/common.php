@@ -13,7 +13,8 @@
  * @license             GNU GPL 2 (http://www.gnu.org/licenses/gpl-2.0.html)
  * @package             kernel
  */
-defined('API_MAINFILE_INCLUDED') || die('Restricted access');
+if (!defined('API_MAINFILE_INCLUDED'))
+	define('API_MAINFILE_INCLUDED', true);
 
 /**
  * YOU SHOULD NEVER USE THE FOLLOWING TO CONSTANTS, THEY WILL BE REMOVED
@@ -32,8 +33,8 @@ include_once __DIR__ . DS . 'constants.php';
 /**
  * Include APILoad
  */
-require_once API_ROOT_PATH . DS . 'class' . DS . 'apiload.php';
-require_once API_ROOT_PATH . DS . 'class' . DS . 'preload.php';
+require_once dirname(__DIR__) . DS . 'class' . DS . 'apiload.php';
+require_once dirname(__DIR__) . DS . 'class' . DS . 'preload.php';
 
 /**
  * Create Instance of apiSecurity Object and check Supergolbals
@@ -54,13 +55,13 @@ $apiLogger->startTime('XOOPS Boot');
 /**
  * Include Required Files
  */
-include_once API_ROOT_PATH . DS . 'class' . DS . 'criteria.php';
-include_once API_ROOT_PATH . DS . 'class' . DS . 'module.textsanitizer.php';
-include_once API_ROOT_PATH . DS . 'include' . DS . 'functions.php';
+include_once dirname(__DIR__) . DS . 'class' . DS . 'criteria.php';
+include_once dirname(__DIR__) . DS . 'class' . DS . 'module.textsanitizer.php';
+include_once dirname(__DIR__) . DS . 'include' . DS . 'functions.php';
 /**
  * Get database for making it global
  * Requires APILogger, API_DB_PROXY;
  */
-require_once API_ROOT_PATH . DS . 'include' . DS . 'dbconfig.php';
-require_once API_ROOT_PATH . DS . 'class' . DS . 'database' . DS . 'databasefactory.php';
+require_once dirname(__DIR__) . DS . 'include' . DS . 'dbconfig.php';
+require_once dirname(__DIR__) . DS . 'class' . DS . 'database' . DS . 'databasefactory.php';
 $GLOBALS['APIDB'] = APIDatabaseFactory::getDatabaseConnection();

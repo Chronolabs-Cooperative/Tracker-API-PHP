@@ -1,4 +1,6 @@
 <?php
+define("_API_FATAL_MESSAGE", "Fatal Error Occured: %s");
+
 /**
  * Chronolabs Entitiesing Repository Services REST API API
  *

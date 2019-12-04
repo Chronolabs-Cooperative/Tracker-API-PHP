@@ -88,11 +88,11 @@
 	<img style="float: right; margin: 11px; width: auto; height: auto; clear: none;" src="<?php echo API_URL; ?>/assets/images/logo_350x350.png" />
     <h1><?php echo API_VERSION; ?> -- <?php echo API_LICENSE_COMPANY; ?></h1>
     <p style="text-align: justify; font-size: 169.2356897%; font-weight: 400">This is an API Service for providing torrent tracker to your website, just below this is the URL for the tracker to be entered into the torrent to support trackers, it also has a scrape the URL for this torrent tracker is:~</p>
-    <p style="text-align: center; font-size: 299.784623%; font-weight: bold"><?php echo API_URL_TRACKER; ?></p>
+    <p style="text-align: center; font-size: 299.784623%; font-weight: bold"><?php echo API_URL . '/announce'; ?></p>
     <h2>Code API Documentation</h2>
     <p>You can find the phpDocumentor code API documentation at the following path :: <a href="<?php echo API_URL; ?>/docs/" target="_blank"><?php echo API_URL; ?>/docs/</a>. These should outline the source code core functions and classes for the API to function!</p>   
     <h2>Benc Document Output</h2>
-    <p>This is done with the <em>serial.api</em> extension at the end of the url, this is for the functions for entities on the API!</p>
+    <p>This is done with the <em>benc.api</em> extension at the end of the url, this is for the functions for entities on the API!</p>
     <blockquote>
         <font color="#001201">This is for a list of all torrents for the API</font><br/>
         <em><strong><a href="<?php echo API_URL; ?>/v2/torrents/benc.api" target="_blank"><?php echo API_URL; ?>/v2/torrents/benc.api</a></strong></em><br /><br />
@@ -163,7 +163,7 @@
     <p>There is a limit of <?php echo MAXIMUM_QUERIES; ?> queries per hour. You can add yourself to the whitelist by using the following form API <a href="http://whitelist.<?php echo domain; ?>/">Whitelisting form (whitelist.<?php echo domain; ?>)</a>. This is only so this service isn't abused!!</p>
     <?php } ?>
     <h2>The Author</h2>
-    <p>This was developed by Simon Roberts in 2013 and is part of the Chronolabs System and api's.<br/><br/>This is open source which you can download from <a href="https://sourceforge.net/projects/chronolabsapis/">https://sourceforge.net/projects/chronolabsapis/</a> contact the scribe  <a href="mailto:wishcraft@users.sourceforge.net">wishcraft@users.sourceforge.net</a></p></body>
+    <p>This was developed by Simon Roberts in 2019 and is part of the Chronolabs System and api's.<br/><br/>This is open source which you can download from <a href="https://github.com/Chronolabs-Cooperative/Tracker-API-PHP">https://github.com/Chronolabs-Cooperative/Tracker-API-PHP/</a> contact the scribe  <a href="mailto:wishcraft@users.sourceforge.net">wishcraft@users.sourceforge.net</a></p></body>
 </div>
 </html>
 <?php 
